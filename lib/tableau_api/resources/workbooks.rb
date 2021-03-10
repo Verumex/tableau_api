@@ -140,9 +140,9 @@ module TableauApi
         @client.connection.api_get_collection(url, 'views.view')
       end
 
-      def list
-        url = "sites/#{@client.auth.site_id}/users/#{@client.auth.user_id}/workbooks"
-        @client.connection.api_get_collection(url, 'workbooks.workbook')
+      def list(**params)
+        url = "sites/#{@client.auth.site_id}/workbooks"
+        @client.connection.api_get_collection(url, 'workbooks.workbook', **params)
       end
 
       private
