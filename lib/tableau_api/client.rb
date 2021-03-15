@@ -33,6 +33,7 @@ module TableauApi
         sites: TableauApi::Resources::Sites,
         users: TableauApi::Resources::Users,
         groups: TableauApi::Resources::Groups,
+        views: TableauApi::Resources::Views,
         workbooks: TableauApi::Resources::Workbooks,
         datasources: TableauApi::Resources::Datasources,
         jobs: TableauApi::Resources::Jobs
